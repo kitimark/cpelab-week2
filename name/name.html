@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name</title>
+    <script>
+      const update_name = () => {
+        const firstName = document.querySelector('#first-name').value
+        const lastName = document.querySelector('#last-name').value
+
+        const fullName = `${firstName} ${lastName}`
+
+        document.querySelector('#name').innerHTML = fullName
+        document.title = `Your name is ${fullName}`
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#first-name').onkeyup = update_name
+        document.querySelector('#last-name').onkeyup = update_name
+      })
+    </script>
+  </head>
+  <body>
+    <p>
+      Hello, <span id="name">world.</span>
+    </p>
+    <input id="first-name" type="text" placeholder="First Name">
+    <input id="last-name" type="text" placeholder="Last Name">
+  </body>
+</html>
+
