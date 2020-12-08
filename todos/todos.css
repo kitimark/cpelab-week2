@@ -1,6 +1,7 @@
 body {
   max-width: 512px;
   margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
@@ -34,4 +35,34 @@ form {
 #new-todo-container button[type="submit"]:disabled {
   background-color: #dfdfdf;
   border: none;
+}
+
+#todos {
+  margin: 16px 0;
+  padding: 0;
+}
+
+#todos li {
+  font-size: 20px;
+  display: flex;
+  padding: 8px 12px;
+  border: 1px solid #dfdfdf;
+  border-radius: 9999px;
+  margin-bottom: 10px;
+}
+
+#todos span {
+  flex: 1;
+}
+
+#todos button {
+  color: white;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: #10B981;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  flex: none;
 }
