@@ -1,0 +1,37 @@
+body {
+  max-width: 512px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+}
+
+#new-todo-container {
+  padding: 8px 12px;
+  border: 1px solid #dfdfdf;
+  border-radius: 9999px;
+}
+
+#new-todo-container input[type="text"] {
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+#new-todo-container button[type="submit"] {
+  color: white;
+  font-size: 20px;
+  width: 24px;
+  height: 24px;
+  background-color: #10B981;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+}
+
+#new-todo-container button[type="submit"]:disabled {
+  background-color: #dfdfdf;
+  border: none;
+}
