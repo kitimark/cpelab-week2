@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         todoTopic.innerHTML = todoInput.value;
         // Create delete button
         var deleteButton = document.createElement('button');
-        deleteButton.innerHTML = 'x';
+        deleteButton.innerHTML = '\u2713';
         deleteButton.onclick = function () {
             todos.removeChild(todo);
         };
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         todo.append(deleteButton);
         // Append li to ul
         todos.append(todo);
-        // reset input
+        // Reset input
         todoInput.value = '';
         submitTodo.disabled = true;
         return false;

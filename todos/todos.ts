@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create delete button
     const deleteButton = document.createElement('button')
-    deleteButton.innerHTML = 'x'
+    deleteButton.innerHTML = '\u2713'
     deleteButton.onclick = function() {
       todos.removeChild(todo)
     }
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Append li to ul
     todos.append(todo)
 
-    // reset input
+    // Reset input
     todoInput.value = ''
     submitTodo.disabled = true
 
