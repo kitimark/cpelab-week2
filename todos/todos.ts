@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelector('form').onsubmit = function () {
     const todos = document.querySelector<HTMLUListElement>('#todos')
-
     const todoInput = document.querySelector<HTMLInputElement>('#new-todo')
+    const submitTodo = document.querySelector<HTMLInputElement>('#submit-todo')
 
     // Create new todo
     const todo = document.createElement('li')
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // reset input
     todoInput.value = ''
+    submitTodo.disabled = true
 
     return false
   }

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('form').onsubmit = function () {
         var todos = document.querySelector('#todos');
         var todoInput = document.querySelector('#new-todo');
+        var submitTodo = document.querySelector('#submit-todo');
         // Create new todo
         var todo = document.createElement('li');
         var todoTopic = document.createElement('span');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         todos.append(todo);
         // reset input
         todoInput.value = '';
+        submitTodo.disabled = true;
         return false;
     };
 });
